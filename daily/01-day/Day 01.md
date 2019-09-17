@@ -1,4 +1,4 @@
-#**Day 01 Questions**
+# **Day 01 Questions**
 
 Read all the resources mentioned in Lecture 1
 
@@ -12,7 +12,7 @@ If IPv4 can only have 4 billion unique IP address how come more than [7 billion]
 
 **Reference slide:** [Link](http://bit.ly/fs101-day01)
 
-#**Technical stack of Github:**
+# **Technical stack of Github:**
 
 - **Data Storage:** PostgreSQL
 - **Operating System:** Linux
@@ -31,7 +31,7 @@ If IPv4 can only have 4 billion unique IP address how come more than [7 billion]
 - **Test/code coverage stats:** CodeConv
 - **Encryption:** SSL/TLS Encryption
 
-#**New Features introduced in HTTP/2**
+# **New Features introduced in HTTP/2**
 
 - **Header Compression:** HTTP/2 compress a large number of redundant header frames. It uses the HPACK specification as a simple and secure approach to header compression. Both client and server maintain a list of headers used in previous client-server requests.
 
@@ -43,7 +43,7 @@ If IPv4 can only have 4 billion unique IP address how come more than [7 billion]
 
   Browsers using HTTP/2 implementation will convert the same text commands into binary before transmitting it over the network.
 
-#**Places where DNS cache is maintained**
+# **Places where DNS cache is maintained**
 
 - Browser Level 
 - Operating System Level
