@@ -1,4 +1,5 @@
 package com.xebia.day3;
+
 public class Customer {
     private String name;
     private int currentBalance;

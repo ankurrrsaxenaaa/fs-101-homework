@@ -1,4 +1,5 @@
 package com.xebia.day3;
+
 public class Item {
     private String name;
     private int price;

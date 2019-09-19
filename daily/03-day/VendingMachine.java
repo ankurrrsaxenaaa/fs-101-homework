@@ -2,6 +2,7 @@ package com.xebia.day3;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class VendingMachine {
 
     private Map<Item, Integer> inventory = new HashMap<>();
