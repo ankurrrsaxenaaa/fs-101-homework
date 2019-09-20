@@ -1,9 +1,9 @@
-# Day 03
+# Day 04
 
 ## Awesome Bakery Application
 
-- Previous Code inside the Bakery Folder
-- Refactored code inside the parent 03-day folder which is made a package
+- Previous Code inside the Bakery Folder of Day 03
+- Refactored code inside the parent 04-day folder which is made a package
 
 #### **What was done wrong in the assignment code:**
 
