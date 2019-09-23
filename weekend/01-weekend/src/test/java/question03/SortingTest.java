@@ -41,13 +41,13 @@ public class SortingTest {
     @Test
     public void should_return_a_sorted_list_with_upper_case_alphabetically()
     {
-        List<String> inputStringList=new ArrayList<String>();
-        inputStringList.add("I");
-        inputStringList.add("am");
-        inputStringList.add("a");
-        inputStringList.add("java");
-        inputStringList.add("developer");
-        List<String> outputStringList= Sorting.sort(inputStringList);
+        List<String> inputList=new ArrayList<String>();
+        inputList.add("I");
+        inputList.add("am");
+        inputList.add("a");
+        inputList.add("java");
+        inputList.add("developer");
+        List<String> outputStringList= Sorting.sort(inputList);
         List<String> expectedOutputList= new ArrayList<String>();
         expectedOutputList.add("A");
         expectedOutputList.add("Am");
@@ -60,14 +60,14 @@ public class SortingTest {
     @Test
     public void should_return_a_sorted_list_with_upper_case_alphabetically_ignoring_string_white_spaces()
     {
-        List<String> inputStringList=new ArrayList<String>();
-        inputStringList.add("I");
-        inputStringList.add("am");
-        inputStringList.add(" ");
-        inputStringList.add("a");
-        inputStringList.add("java");
-        inputStringList.add("developer");
-        List<String> outputStringList= Sorting.sort(inputStringList);
+        List<String> inputList=new ArrayList<String>();
+        inputList.add("I");
+        inputList.add("am");
+        inputList.add(" ");
+        inputList.add("a");
+        inputList.add("java");
+        inputList.add("developer");
+        List<String> outputStringList= Sorting.sort(inputList);
         List<String> expectedOutputList= new ArrayList<String>();
         expectedOutputList.add("A");
         expectedOutputList.add("Am");
