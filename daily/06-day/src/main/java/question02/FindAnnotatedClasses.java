@@ -8,7 +8,7 @@ import java.util.List;
 
 
 public class FindAnnotatedClasses {
-    static List<String> findDocumentAnnotationClasses (String packageName) {
+    public static List<String> findDocumentAnnotationClasses (String packageName) {
         List<String> result=new ArrayList<String>();
         Reflections reflections = new Reflections(packageName);
         for (Class<?> cl : reflections.getTypesAnnotatedWith(Document.class)) {
