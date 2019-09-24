@@ -42,11 +42,7 @@ public @interface Override
 
 ## `CLASS` Annotaion
 
-
-
-
-
-
+No classes found in JDK. However there are some third-party packages that has `CLASS` Annotation
 
 
 ## `RUNTIME` **Annotation**
