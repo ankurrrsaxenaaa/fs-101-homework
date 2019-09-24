@@ -4,6 +4,7 @@ package question02;
 import org.reflections.Reflections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -12,9 +13,9 @@ public class FindAnnotatedClasses {
         List<String> result=new ArrayList<String>();
         Reflections reflections = new Reflections(packageName);
         for (Class<?> cl : reflections.getTypesAnnotatedWith(Document.class)) {
-            Document find = cl.getAnnotation(Document.class);
             result.add(cl.getSimpleName());
         }
+        Collections.sort(result);
         return result;
     }
 }
