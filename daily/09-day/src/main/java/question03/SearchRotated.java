@@ -2,7 +2,7 @@ package question03;
 
 public class SearchRotated {
 
-    private static int search(int[] nums, int target) {
+    static int search(int[] nums, int target) {
         return binarySearch(nums, 0, nums.length-1, target);
     }
 

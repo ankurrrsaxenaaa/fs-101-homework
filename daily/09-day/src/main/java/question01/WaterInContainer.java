@@ -2,7 +2,7 @@ package question01;
 
 public class WaterInContainer {
 
-    private static int maxArea(int height[])
+    public static int maxArea(int height[])
     {
         int left = 0;
         int right = height.length -1;

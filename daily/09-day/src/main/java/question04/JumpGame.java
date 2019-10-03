@@ -2,7 +2,7 @@ package question04;
 
 public class JumpGame {
 
-    private static boolean canJump(int nums[])
+    public static boolean canJump(int nums[])
     {
         if (nums.length <= 1)
             return true;
