@@ -1,12 +1,8 @@
 package police_station;
 
-import org.assertj.core.api.Assertions;
+
 import org.junit.Test;
-
-import java.util.PriorityQueue;
-
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.Assert.*;
 
 public class PoliceStationTest {
 

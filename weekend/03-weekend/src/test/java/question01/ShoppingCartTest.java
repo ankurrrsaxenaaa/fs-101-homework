@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.*;
 public class ShoppingCartTest {
 
     @Test
-    public void should_be_able_to_add_product_to_shopping_cart() {
+    public void should_be_able_to_add_items_to_shopping_cart() {
         Stock stock = Stock.loadStock(
                 new Product("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
                 new Product("Xebia Pen", 10, BigDecimal.valueOf(50)),
@@ -22,7 +22,7 @@ public class ShoppingCartTest {
     }
 
     @Test
-    public void should_not_add_product_to_shopping_cart_when_given_invalid_data() {
+    public void should_not_add_item_to_shopping_cart_when_item_not_in_stock() {
         Stock stock = Stock.loadStock(
                 new Product("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
                 new Product("Xebia Pen", 10, BigDecimal.valueOf(50)),
@@ -37,7 +37,7 @@ public class ShoppingCartTest {
     }
 
     @Test
-    public void should_remove_product_from_shopping_cart_when_given_valid_data() {
+    public void should_remove_items_from_shopping_cart() {
         Stock stock = Stock.loadStock(
                 new Product("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
                 new Product("Xebia Pen", 10, BigDecimal.valueOf(50)),
@@ -51,7 +51,7 @@ public class ShoppingCartTest {
     }
 
     @Test
-    public void should_not_remove_product_from_shopping_cart_when_given_invalid_data() {
+    public void should_not_remove_items_from_shopping_cart_when_the_item_is_not_present_in_cart() {
         Stock stock = Stock.loadStock(
                 new Product("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
                 new Product("Xebia Pen", 10, BigDecimal.valueOf(50)),
