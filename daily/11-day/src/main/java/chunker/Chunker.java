@@ -13,16 +13,14 @@ public class Chunker<T> {
         {
             resultSize++;
         }
-        T[][]  result = (T[][])Array.newInstance(cls, resultSize,chunkSize);//new T[resultSize][];
+        T[][]  result = (T[][])Array.newInstance(cls, resultSize,chunkSize);
         int counter=0;
         for(int i=0;i<resultSize;i++)
         {
             T chunk[] = (T[])Array.newInstance(cls, chunkSize);
-            //  int chunk[]=new int[chunkSize];
             if(i==resultSize-1)
             {
                 chunk= (T[])Array.newInstance(cls, (input.length)-counter);
-                //new int[(input.length)-counter];
             }
             for(int j=0;j<chunk.length;j++)
             {
