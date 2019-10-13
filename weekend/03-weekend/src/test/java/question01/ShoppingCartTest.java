@@ -11,9 +11,9 @@ public class ShoppingCartTest {
     @Test
     public void should_be_able_to_add_items_to_shopping_cart() {
         Stock stock = Stock.loadStock(
-                new Product("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
-                new Product("Xebia Pen", 10, BigDecimal.valueOf(50)),
-                new Product("Calendar", 8, BigDecimal.valueOf(2000)));
+                Product.newProduct("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
+                Product.newProduct("Xebia Pen", 10, BigDecimal.valueOf(50)),
+                Product.newProduct("Calendar", 8, BigDecimal.valueOf(2000)));
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.addProductToCart(stock, new ProductRequest("Openshift cookbook", 1));
         shoppingCart.addProductToCart(stock, new ProductRequest("Xebia pen", 5));
@@ -24,9 +24,9 @@ public class ShoppingCartTest {
     @Test
     public void should_not_add_item_to_shopping_cart_when_item_not_in_stock() {
         Stock stock = Stock.loadStock(
-                new Product("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
-                new Product("Xebia Pen", 10, BigDecimal.valueOf(50)),
-                new Product("Calendar", 8, BigDecimal.valueOf(2000)));
+                Product.newProduct("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
+                Product.newProduct("Xebia Pen", 10, BigDecimal.valueOf(50)),
+                Product.newProduct("Calendar", 8, BigDecimal.valueOf(2000)));
         ShoppingCart shoppingCart = new ShoppingCart();
         try {
             shoppingCart.addProductToCart(stock, new ProductRequest("Openshift cookbook", 6));
@@ -39,9 +39,9 @@ public class ShoppingCartTest {
     @Test
     public void should_remove_items_from_shopping_cart() {
         Stock stock = Stock.loadStock(
-                new Product("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
-                new Product("Xebia Pen", 10, BigDecimal.valueOf(50)),
-                new Product("Calendar", 8, BigDecimal.valueOf(2000)));
+                Product.newProduct("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
+                Product.newProduct("Xebia Pen", 10, BigDecimal.valueOf(50)),
+                Product.newProduct("Calendar", 8, BigDecimal.valueOf(2000)));
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.addProductToCart(stock, new ProductRequest("Openshift cookbook", 1));
         shoppingCart.addProductToCart(stock, new ProductRequest("Xebia pen", 5));
@@ -53,9 +53,9 @@ public class ShoppingCartTest {
     @Test
     public void should_not_remove_items_from_shopping_cart_when_the_item_is_not_present_in_cart() {
         Stock stock = Stock.loadStock(
-                new Product("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
-                new Product("Xebia Pen", 10, BigDecimal.valueOf(50)),
-                new Product("Calendar", 8, BigDecimal.valueOf(2000)));
+                Product.newProduct("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
+                Product.newProduct("Xebia Pen", 10, BigDecimal.valueOf(50)),
+                Product.newProduct("Calendar", 8, BigDecimal.valueOf(2000)));
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.addProductToCart(stock, new ProductRequest("Openshift cookbook", 1));
         shoppingCart.addProductToCart(stock, new ProductRequest("Xebia pen", 5));
@@ -70,9 +70,9 @@ public class ShoppingCartTest {
     @Test
     public void should_list_all_items_in_the_cart_with_total_price(){
         Stock stock = Stock.loadStock(
-                new Product("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
-                new Product("Xebia Pen", 10, BigDecimal.valueOf(50)),
-                new Product("Calendar", 8, BigDecimal.valueOf(2000)));
+                Product.newProduct("OpenShift CookBook", 5, BigDecimal.valueOf(3000)),
+                Product.newProduct("Xebia Pen", 10, BigDecimal.valueOf(50)),
+                Product.newProduct("Calendar", 8, BigDecimal.valueOf(2000)));
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.addProductToCart(stock, new ProductRequest("Openshift cookbook", 1));
         shoppingCart.addProductToCart(stock, new ProductRequest("Xebia pen", 5));

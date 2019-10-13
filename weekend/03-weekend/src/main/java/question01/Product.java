@@ -7,10 +7,14 @@ public class Product {
     private int quantity;
     private BigDecimal price;
 
-    public Product(String productName, int quantity, BigDecimal price) {
+    private Product(String productName, int quantity, BigDecimal price) {
         this.productName = productName;
         this.quantity = quantity;
         this.price = price;
+    }
+
+    public static Product newProduct(String productName, int quantity, BigDecimal price) {
+        return new Product(productName, quantity, price);
     }
 
     public String getProductName() {
@@ -33,7 +37,4 @@ public class Product {
         this.quantity = this.quantity-quantity;
     }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
 }
