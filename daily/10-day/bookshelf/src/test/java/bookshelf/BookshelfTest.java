@@ -120,7 +120,7 @@ class BookShelfTest {
         Book book5=new Book.Builder().withAuthor("").withTitle("Khal Drogo").withBookType(BookType.EBOOK).withShouldShare(true).build();
         bookShelf.add(book1,book2,book3,book4,book5);
 
-        //when we want all th books that can be shared
+        //when we want all the books that can be shared
         Set<Book> bookShared1=bookShelf.shareBooks(new BookSpecification.Builder().build());
         assertThat(bookShared1).hasSize(4);
         assertThat(bookShared1).contains(book1,book3,book4,book5);

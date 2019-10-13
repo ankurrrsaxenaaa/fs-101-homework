@@ -47,7 +47,6 @@ class BookShelf {
         return sorted;
     }
 
-
     public Set<Book> shareBooks(BookSpecification bookSpecification) {
         Set<Book> sharedBooks=new HashSet<Book>();
         for(Book book:books) {
