@@ -33,7 +33,7 @@ class GuestBookService {
 
     private static class Database {
         void save(GuestBookEntry guestBookEntry) {
-            System.out.println( "Saved Guestbook to DB" );
+            System.out.println( "Saved Guestbook to DBk" );
         }
     }
 
